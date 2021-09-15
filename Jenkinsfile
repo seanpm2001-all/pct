@@ -57,9 +57,9 @@ pipeline {
       steps {
         parallel branch1: { testBranch('Windows-Office', 'JDK8', 'Ant 1.10', 'OpenEdge-11.7', true, '11.7-Win') },
                  branch3: { testBranch('Linux-Office', 'JDK8', 'Ant 1.10', 'OpenEdge-11.7', false, '11.7-Linux') },
-                 branch5: { testBranch('Windows-Office', 'Corretto 11', 'Ant 1.10', 'OpenEdge-12.2', true, '12.2-Win') },
-                 branch8: { testBranch('Linux-Office', 'Corretto 11', 'Ant 1.10', 'OpenEdge-12.2', false, '12.2-Linux') },
-                 branch9: { testBranch('Windows-Office', 'Corretto 11', 'Ant 1.10', 'OpenEdge-12.4', false, '12.4-Win') },
+                 branch5: { testBranch('Windows-Office', 'JDK17', 'Ant 1.10', 'OpenEdge-12.2', true, '12.2-Win') },
+                 branch8: { testBranch('Linux-Office', 'JDK17', 'Ant 1.10', 'OpenEdge-12.2', false, '12.2-Linux') },
+                 branch9: { testBranch('Windows-Office', 'JDK17', 'Ant 1.10', 'OpenEdge-12.4', false, '12.4-Win') },
                  failFast: false
       }
     }
