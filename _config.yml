@@ -1,0 +1,8 @@
+title: Pct
+description: Home of the PCT project
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
